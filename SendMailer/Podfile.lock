@@ -1,0 +1,32 @@
+PODS:
+  - PromisesObjC (2.0.0)
+  - PromisesSwift (2.0.0):
+    - PromisesObjC (= 2.0.0)
+  - Resolver (1.5.0)
+  - SwiftKeychainWrapper (4.0.1)
+  - SwiftyBeaver (1.9.5)
+
+DEPENDENCIES:
+  - PromisesSwift
+  - Resolver
+  - SwiftKeychainWrapper
+  - SwiftyBeaver
+
+SPEC REPOS:
+  trunk:
+    - PromisesObjC
+    - PromisesSwift
+    - Resolver
+    - SwiftKeychainWrapper
+    - SwiftyBeaver
+
+SPEC CHECKSUMS:
+  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  PromisesSwift: e0b2a6433469efb0b83a2b84c62a2abab8e5e5d4
+  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
+
+PODFILE CHECKSUM: 5fd627dc9f2024aba37040c5c3aeeba268df9a5b
+
+COCOAPODS: 1.11.2

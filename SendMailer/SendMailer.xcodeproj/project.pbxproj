@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B1C032AA36E98B75FB4C5DD /* Pods_SendMailer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F3BD6B73AA9E83BBF30138 /* Pods_SendMailer.framework */; };
+		44E3E7E827CE583F0092E6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */; };
+		44E3E7EA27CE583F0092E6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7E927CE583F0092E6C9 /* SceneDelegate.swift */; };
+		44E3E7EC27CE583F0092E6C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7EB27CE583F0092E6C9 /* ViewController.swift */; };
+		44E3E7EF27CE583F0092E6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E7ED27CE583F0092E6C9 /* Main.storyboard */; };
+		44E3E7F127CE58420092E6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E7F027CE58420092E6C9 /* Assets.xcassets */; };
+		44E3E7F427CE58420092E6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E7F227CE58420092E6C9 /* LaunchScreen.storyboard */; };
+		44E3E7FF27CE58420092E6C9 /* SendMailerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7FE27CE58420092E6C9 /* SendMailerTests.swift */; };
+		44E3E80927CE58420092E6C9 /* SendMailerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E80827CE58420092E6C9 /* SendMailerUITests.swift */; };
+		44E3E80B27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E80A27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44E3E7FB27CE58420092E6C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44E3E7DC27CE583E0092E6C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44E3E7E327CE583E0092E6C9;
+			remoteInfo = SendMailer;
+		};
+		44E3E80527CE58420092E6C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44E3E7DC27CE583E0092E6C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44E3E7E327CE583E0092E6C9;
+			remoteInfo = SendMailer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25E7E212D18957FEABF4627B /* Pods-SendMailer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.release.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.release.xcconfig"; sourceTree = "<group>"; };
+		298D4949CA1137E42F24C190 /* Pods-SendMailer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.debug.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.debug.xcconfig"; sourceTree = "<group>"; };
+		44E3E7E427CE583E0092E6C9 /* SendMailer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMailer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44E3E7E927CE583F0092E6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44E3E7EB27CE583F0092E6C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44E3E7EE27CE583F0092E6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44E3E7F027CE58420092E6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44E3E7F327CE58420092E6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44E3E7F527CE58420092E6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E3E7FA27CE58420092E6C9 /* SendMailerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendMailerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E3E7FE27CE58420092E6C9 /* SendMailerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailerTests.swift; sourceTree = "<group>"; };
+		44E3E80427CE58420092E6C9 /* SendMailerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendMailerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E3E80827CE58420092E6C9 /* SendMailerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailerUITests.swift; sourceTree = "<group>"; };
+		44E3E80A27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89F3BD6B73AA9E83BBF30138 /* Pods_SendMailer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendMailer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44E3E7E127CE583E0092E6C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1C032AA36E98B75FB4C5DD /* Pods_SendMailer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E3E7F727CE58420092E6C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E3E80127CE58420092E6C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056C9C55F094F231D61A1F25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				298D4949CA1137E42F24C190 /* Pods-SendMailer.debug.xcconfig */,
+				25E7E212D18957FEABF4627B /* Pods-SendMailer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		44E3E7DB27CE583E0092E6C9 = {
+			isa = PBXGroup;
+			children = (
+				44E3E7E627CE583E0092E6C9 /* SendMailer */,
+				44E3E7FD27CE58420092E6C9 /* SendMailerTests */,
+				44E3E80727CE58420092E6C9 /* SendMailerUITests */,
+				44E3E7E527CE583E0092E6C9 /* Products */,
+				056C9C55F094F231D61A1F25 /* Pods */,
+				CA16A8EF1B47F95BD66A64F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44E3E7E527CE583E0092E6C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44E3E7E427CE583E0092E6C9 /* SendMailer.app */,
+				44E3E7FA27CE58420092E6C9 /* SendMailerTests.xctest */,
+				44E3E80427CE58420092E6C9 /* SendMailerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44E3E7E627CE583E0092E6C9 /* SendMailer */ = {
+			isa = PBXGroup;
+			children = (
+				44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */,
+				44E3E7E927CE583F0092E6C9 /* SceneDelegate.swift */,
+				44E3E7EB27CE583F0092E6C9 /* ViewController.swift */,
+				44E3E7ED27CE583F0092E6C9 /* Main.storyboard */,
+				44E3E7F027CE58420092E6C9 /* Assets.xcassets */,
+				44E3E7F227CE58420092E6C9 /* LaunchScreen.storyboard */,
+				44E3E7F527CE58420092E6C9 /* Info.plist */,
+			);
+			path = SendMailer;
+			sourceTree = "<group>";
+		};
+		44E3E7FD27CE58420092E6C9 /* SendMailerTests */ = {
+			isa = PBXGroup;
+			children = (
+				44E3E7FE27CE58420092E6C9 /* SendMailerTests.swift */,
+			);
+			path = SendMailerTests;
+			sourceTree = "<group>";
+		};
+		44E3E80727CE58420092E6C9 /* SendMailerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44E3E80827CE58420092E6C9 /* SendMailerUITests.swift */,
+				44E3E80A27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift */,
+			);
+			path = SendMailerUITests;
+			sourceTree = "<group>";
+		};
+		CA16A8EF1B47F95BD66A64F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89F3BD6B73AA9E83BBF30138 /* Pods_SendMailer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44E3E7E327CE583E0092E6C9 /* SendMailer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E3E80E27CE58420092E6C9 /* Build configuration list for PBXNativeTarget "SendMailer" */;
+			buildPhases = (
+				FCD257627957A8EF424005FE /* [CP] Check Pods Manifest.lock */,
+				44E3E7E027CE583E0092E6C9 /* Sources */,
+				44E3E7E127CE583E0092E6C9 /* Frameworks */,
+				44E3E7E227CE583E0092E6C9 /* Resources */,
+				B0A5BB7B4273B314A997005B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendMailer;
+			productName = SendMailer;
+			productReference = 44E3E7E427CE583E0092E6C9 /* SendMailer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44E3E7F927CE58420092E6C9 /* SendMailerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E3E81127CE58420092E6C9 /* Build configuration list for PBXNativeTarget "SendMailerTests" */;
+			buildPhases = (
+				44E3E7F627CE58420092E6C9 /* Sources */,
+				44E3E7F727CE58420092E6C9 /* Frameworks */,
+				44E3E7F827CE58420092E6C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44E3E7FC27CE58420092E6C9 /* PBXTargetDependency */,
+			);
+			name = SendMailerTests;
+			productName = SendMailerTests;
+			productReference = 44E3E7FA27CE58420092E6C9 /* SendMailerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44E3E80327CE58420092E6C9 /* SendMailerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E3E81427CE58420092E6C9 /* Build configuration list for PBXNativeTarget "SendMailerUITests" */;
+			buildPhases = (
+				44E3E80027CE58420092E6C9 /* Sources */,
+				44E3E80127CE58420092E6C9 /* Frameworks */,
+				44E3E80227CE58420092E6C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44E3E80627CE58420092E6C9 /* PBXTargetDependency */,
+			);
+			name = SendMailerUITests;
+			productName = SendMailerUITests;
+			productReference = 44E3E80427CE58420092E6C9 /* SendMailerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44E3E7DC27CE583E0092E6C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					44E3E7E327CE583E0092E6C9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					44E3E7F927CE58420092E6C9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 44E3E7E327CE583E0092E6C9;
+					};
+					44E3E80327CE58420092E6C9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 44E3E7E327CE583E0092E6C9;
+					};
+				};
+			};
+			buildConfigurationList = 44E3E7DF27CE583E0092E6C9 /* Build configuration list for PBXProject "SendMailer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44E3E7DB27CE583E0092E6C9;
+			productRefGroup = 44E3E7E527CE583E0092E6C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44E3E7E327CE583E0092E6C9 /* SendMailer */,
+				44E3E7F927CE58420092E6C9 /* SendMailerTests */,
+				44E3E80327CE58420092E6C9 /* SendMailerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44E3E7E227CE583E0092E6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E3E7F427CE58420092E6C9 /* LaunchScreen.storyboard in Resources */,
+				44E3E7F127CE58420092E6C9 /* Assets.xcassets in Resources */,
+				44E3E7EF27CE583F0092E6C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E3E7F827CE58420092E6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E3E80227CE58420092E6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0A5BB7B4273B314A997005B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendMailer/Pods-SendMailer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendMailer/Pods-SendMailer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SendMailer/Pods-SendMailer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD257627957A8EF424005FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SendMailer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44E3E7E027CE583E0092E6C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E3E7EC27CE583F0092E6C9 /* ViewController.swift in Sources */,
+				44E3E7E827CE583F0092E6C9 /* AppDelegate.swift in Sources */,
+				44E3E7EA27CE583F0092E6C9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E3E7F627CE58420092E6C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E3E7FF27CE58420092E6C9 /* SendMailerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44E3E80027CE58420092E6C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E3E80B27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift in Sources */,
+				44E3E80927CE58420092E6C9 /* SendMailerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44E3E7FC27CE58420092E6C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44E3E7E327CE583E0092E6C9 /* SendMailer */;
+			targetProxy = 44E3E7FB27CE58420092E6C9 /* PBXContainerItemProxy */;
+		};
+		44E3E80627CE58420092E6C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44E3E7E327CE583E0092E6C9 /* SendMailer */;
+			targetProxy = 44E3E80527CE58420092E6C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44E3E7ED27CE583F0092E6C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44E3E7EE27CE583F0092E6C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44E3E7F227CE58420092E6C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44E3E7F327CE58420092E6C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44E3E80C27CE58420092E6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44E3E80D27CE58420092E6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44E3E80F27CE58420092E6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298D4949CA1137E42F24C190 /* Pods-SendMailer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendMailer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Kiselev.SendMailer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44E3E81027CE58420092E6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E7E212D18957FEABF4627B /* Pods-SendMailer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendMailer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Kiselev.SendMailer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44E3E81227CE58420092E6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Kiselev.SendMailerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SendMailer.app/SendMailer";
+			};
+			name = Debug;
+		};
+		44E3E81327CE58420092E6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Kiselev.SendMailerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SendMailer.app/SendMailer";
+			};
+			name = Release;
+		};
+		44E3E81527CE58420092E6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Kiselev.SendMailerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SendMailer;
+			};
+			name = Debug;
+		};
+		44E3E81627CE58420092E6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Kiselev.SendMailerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SendMailer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44E3E7DF27CE583E0092E6C9 /* Build configuration list for PBXProject "SendMailer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E3E80C27CE58420092E6C9 /* Debug */,
+				44E3E80D27CE58420092E6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44E3E80E27CE58420092E6C9 /* Build configuration list for PBXNativeTarget "SendMailer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E3E80F27CE58420092E6C9 /* Debug */,
+				44E3E81027CE58420092E6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44E3E81127CE58420092E6C9 /* Build configuration list for PBXNativeTarget "SendMailerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E3E81227CE58420092E6C9 /* Debug */,
+				44E3E81327CE58420092E6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44E3E81427CE58420092E6C9 /* Build configuration list for PBXNativeTarget "SendMailerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E3E81527CE58420092E6C9 /* Debug */,
+				44E3E81627CE58420092E6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44E3E7DC27CE583E0092E6C9 /* Project object */;
+}
