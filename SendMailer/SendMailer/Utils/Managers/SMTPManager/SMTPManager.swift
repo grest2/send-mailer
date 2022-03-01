@@ -21,7 +21,7 @@ class SMTPManager: ISMTPManager {
         let email = self.cache.getValue(forKey: .email)
         let password = self.cache.getValue(forKey: .password)
         
-        let _smtp = SMTP(hostname: host, email: email, password: password, port: Int32(port) ?? 587)
+        let _smtp = SMTP(hostname: host, email: email, password: password, port: Int32(port) ?? 587, authMethods: [.login])
         return _smtp
     }()
     
