@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B1C032AA36E98B75FB4C5DD /* Pods_SendMailer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F3BD6B73AA9E83BBF30138 /* Pods_SendMailer.framework */; };
 		44E3E7E827CE583F0092E6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */; };
-		44E3E7EA27CE583F0092E6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7E927CE583F0092E6C9 /* SceneDelegate.swift */; };
 		44E3E7EC27CE583F0092E6C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7EB27CE583F0092E6C9 /* ViewController.swift */; };
 		44E3E7EF27CE583F0092E6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E7ED27CE583F0092E6C9 /* Main.storyboard */; };
 		44E3E7F127CE58420092E6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E7F027CE58420092E6C9 /* Assets.xcassets */; };
@@ -18,6 +17,8 @@
 		44E3E80927CE58420092E6C9 /* SendMailerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E80827CE58420092E6C9 /* SendMailerUITests.swift */; };
 		44E3E80B27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E80A27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift */; };
 		44E3E81927CE5B910092E6C9 /* SwiftSMTP in Frameworks */ = {isa = PBXBuildFile; productRef = 44E3E81827CE5B910092E6C9 /* SwiftSMTP */; };
+		44E3E81C27CE79810092E6C9 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E81B27CE79810092E6C9 /* BorderedView.swift */; };
+		44E3E81E27CE7F240092E6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E81D27CE7F230092E6C9 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		298D4949CA1137E42F24C190 /* Pods-SendMailer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.debug.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.debug.xcconfig"; sourceTree = "<group>"; };
 		44E3E7E427CE583E0092E6C9 /* SendMailer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMailer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44E3E7E927CE583F0092E6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		44E3E7EB27CE583F0092E6C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44E3E7EE27CE583F0092E6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44E3E7F027CE58420092E6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		44E3E80427CE58420092E6C9 /* SendMailerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendMailerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E3E80827CE58420092E6C9 /* SendMailerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailerUITests.swift; sourceTree = "<group>"; };
 		44E3E80A27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44E3E81B27CE79810092E6C9 /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
+		44E3E81D27CE7F230092E6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89F3BD6B73AA9E83BBF30138 /* Pods_SendMailer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendMailer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,8 +119,9 @@
 		44E3E7E627CE583E0092E6C9 /* SendMailer */ = {
 			isa = PBXGroup;
 			children = (
+				44E3E81A27CE72380092E6C9 /* CustomComponents */,
+				44E3E81D27CE7F230092E6C9 /* SceneDelegate.swift */,
 				44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */,
-				44E3E7E927CE583F0092E6C9 /* SceneDelegate.swift */,
 				44E3E7EB27CE583F0092E6C9 /* ViewController.swift */,
 				44E3E7ED27CE583F0092E6C9 /* Main.storyboard */,
 				44E3E7F027CE58420092E6C9 /* Assets.xcassets */,
@@ -143,6 +146,14 @@
 				44E3E80A27CE58420092E6C9 /* SendMailerUITestsLaunchTests.swift */,
 			);
 			path = SendMailerUITests;
+			sourceTree = "<group>";
+		};
+		44E3E81A27CE72380092E6C9 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				44E3E81B27CE79810092E6C9 /* BorderedView.swift */,
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 		CA16A8EF1B47F95BD66A64F9 /* Frameworks */ = {
@@ -334,9 +345,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E3E81C27CE79810092E6C9 /* BorderedView.swift in Sources */,
 				44E3E7EC27CE583F0092E6C9 /* ViewController.swift in Sources */,
 				44E3E7E827CE583F0092E6C9 /* AppDelegate.swift in Sources */,
-				44E3E7EA27CE583F0092E6C9 /* SceneDelegate.swift in Sources */,
+				44E3E81E27CE7F240092E6C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
