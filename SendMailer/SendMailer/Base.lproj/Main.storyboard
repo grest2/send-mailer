@@ -30,7 +30,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gearshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xCW-cg-2Re">
-                                        <rect key="frame" x="362" y="33" width="32" height="31.5"/>
+                                        <rect key="frame" x="362" y="40" width="32" height="31.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="g9h-7j-iXG"/>
                                             <constraint firstAttribute="height" constant="32" id="pBa-r6-cAr"/>
@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="height" constant="80" id="KG1-yP-GQT"/>
                                     <constraint firstAttribute="trailing" secondItem="xCW-cg-2Re" secondAttribute="trailing" constant="20" id="WUz-lV-Znn"/>
                                     <constraint firstItem="9Wt-DE-uXv" firstAttribute="centerX" secondItem="oZV-4J-sVQ" secondAttribute="centerX" id="gFN-co-U0S"/>
-                                    <constraint firstAttribute="bottom" secondItem="xCW-cg-2Re" secondAttribute="bottom" constant="15" id="hD6-DE-8Ed"/>
+                                    <constraint firstAttribute="bottom" secondItem="xCW-cg-2Re" secondAttribute="bottom" constant="8" id="hD6-DE-8Ed"/>
                                     <constraint firstAttribute="bottom" secondItem="9Wt-DE-uXv" secondAttribute="bottom" constant="8" id="kKA-gv-Ped"/>
                                 </constraints>
                             </view>
