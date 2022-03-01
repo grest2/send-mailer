@@ -13,8 +13,15 @@ import Resolver
 class SMTPManager: ISMTPManager {
     
     private let logger: ILogger = Resolver.resolve()
-    private let smtp: SMTP = {
-        let _smtp = SMTP(hostname: "", email: "", password: "")
+    private let cache: ICacheManager = Resolver.resolve()
+    
+    private lazy var smtp: SMTP = {
+        let host = self.cache.getValue(forKey: .host)
+        let port = self.cache.getValue(forKey: .port)
+        let email = self.cache.getValue(forKey: .email)
+        let password = self.cache.getValue(forKey: .password)
+        
+        let _smtp = SMTP(hostname: host, email: email, password: password, port: Int32(port) ?? 587)
         return _smtp
     }()
     
