@@ -1,4 +1,5 @@
 PODS:
+  - mailcore2-ios (0.6.4)
   - PromisesObjC (2.0.0)
   - PromisesSwift (2.0.0):
     - PromisesObjC (= 2.0.0)
@@ -7,6 +8,7 @@ PODS:
   - SwiftyBeaver (1.9.5)
 
 DEPENDENCIES:
+  - mailcore2-ios
   - PromisesSwift
   - Resolver
   - SwiftKeychainWrapper
@@ -14,6 +16,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - mailcore2-ios
     - PromisesObjC
     - PromisesSwift
     - Resolver
@@ -21,12 +24,13 @@ SPEC REPOS:
     - SwiftyBeaver
 
 SPEC CHECKSUMS:
+  mailcore2-ios: 3ff0be2fa553d4da9c11d39c11d51863c768f24f
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   PromisesSwift: e0b2a6433469efb0b83a2b84c62a2abab8e5e5d4
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
   SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
 
-PODFILE CHECKSUM: 5fd627dc9f2024aba37040c5c3aeeba268df9a5b
+PODFILE CHECKSUM: 6b89301fa3d0f8d5c5229102d51d4c26565148aa
 
 COCOAPODS: 1.11.2
