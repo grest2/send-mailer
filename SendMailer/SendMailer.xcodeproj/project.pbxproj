@@ -59,6 +59,7 @@
 		4493357A27CE8F540086EE5B /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		4493357D27CE8FAB0086EE5B /* ILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILogger.swift; sourceTree = "<group>"; };
 		4493357F27CE8FD30086EE5B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		44A4B56927F607AC0043BB83 /* MailCore-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailCore-header.h"; sourceTree = "<group>"; };
 		44E3E7E427CE583E0092E6C9 /* SendMailer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMailer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44E3E7EB27CE583F0092E6C9 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -130,6 +131,14 @@
 			path = Logger;
 			sourceTree = "<group>";
 		};
+		44A4B56827F607940043BB83 /* Objc Headers */ = {
+			isa = PBXGroup;
+			children = (
+				44A4B56927F607AC0043BB83 /* MailCore-header.h */,
+			);
+			path = "Objc Headers";
+			sourceTree = "<group>";
+		};
 		44E3E7DB27CE583E0092E6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +164,7 @@
 		44E3E7E627CE583E0092E6C9 /* SendMailer */ = {
 			isa = PBXGroup;
 			children = (
+				44A4B56827F607940043BB83 /* Objc Headers */,
 				4460992027CEA4B0001E1DF4 /* Controllers */,
 				44E3E82027CE8CE30092E6C9 /* Utils */,
 				44E3E81A27CE72380092E6C9 /* CustomComponents */,
@@ -611,6 +621,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_UNIFDEF_FLAGS = "/Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/Pods/mailcore2-ios /Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/Pods/mailcore2-ios/include/MailCore";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SendMailer/Info.plist;
@@ -628,6 +639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Kiselev.SendMailer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Objc Headers/MailCore-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -640,6 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_UNIFDEF_FLAGS = "/Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/Pods/mailcore2-ios /Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/Pods/mailcore2-ios/include/MailCore";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SendMailer/Info.plist;
@@ -657,6 +670,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Kiselev.SendMailer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Objc Headers/MailCore-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
