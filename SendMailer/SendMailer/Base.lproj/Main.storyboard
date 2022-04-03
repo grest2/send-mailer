@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -297,20 +297,45 @@
                                     <constraint firstItem="gbE-bE-GLi" firstAttribute="leading" secondItem="egy-yG-6Mj" secondAttribute="leading" id="qcQ-fd-wbu"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKw-4V-d13">
+                                <rect key="frame" x="81" y="502" width="129.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Test Connection" titleAlignment="center">
+                                    <color key="baseForegroundColor" red="0.51849697829999997" green="0.29035052030000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.86954220540000005" green="0.84352150459999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="testConnection:" destination="PuD-in-CEH" eventType="touchUpInside" id="CXl-t0-b6b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRD-rL-TJu">
+                                <rect key="frame" x="246" y="502" width="58" height="31"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearStore:" destination="PuD-in-CEH" eventType="touchUpInside" id="aRD-cq-rg3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n0v-U2-gZz"/>
                         <color key="backgroundColor" red="0.68459090919999999" green="0.79361969050000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GKw-4V-d13" firstAttribute="leading" secondItem="n0v-U2-gZz" secondAttribute="leading" constant="81" id="42c-tB-sl1"/>
                             <constraint firstItem="n0v-U2-gZz" firstAttribute="trailing" secondItem="egy-yG-6Mj" secondAttribute="trailing" constant="16" id="5z7-eW-viT"/>
                             <constraint firstItem="OMa-SR-OdT" firstAttribute="leading" secondItem="n0v-U2-gZz" secondAttribute="leading" id="CRe-dB-nHc"/>
+                            <constraint firstItem="cRD-rL-TJu" firstAttribute="top" secondItem="egy-yG-6Mj" secondAttribute="bottom" constant="38" id="E6Z-hA-JG2"/>
                             <constraint firstItem="egy-yG-6Mj" firstAttribute="top" secondItem="OMa-SR-OdT" secondAttribute="bottom" constant="16" id="FwC-sx-hGD"/>
                             <constraint firstItem="n0v-U2-gZz" firstAttribute="trailing" secondItem="OMa-SR-OdT" secondAttribute="trailing" id="NwO-Gr-Ix8"/>
                             <constraint firstItem="OMa-SR-OdT" firstAttribute="top" secondItem="ZQE-OX-QCj" secondAttribute="top" id="Y6f-nE-oP7"/>
+                            <constraint firstItem="n0v-U2-gZz" firstAttribute="trailing" secondItem="cRD-rL-TJu" secondAttribute="trailing" constant="110" id="dAt-ck-T3a"/>
+                            <constraint firstItem="GKw-4V-d13" firstAttribute="top" secondItem="egy-yG-6Mj" secondAttribute="bottom" constant="38" id="ego-Mv-rB4"/>
                             <constraint firstItem="egy-yG-6Mj" firstAttribute="leading" secondItem="n0v-U2-gZz" secondAttribute="leading" constant="16" id="exZ-ZS-Zif"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="back" destination="PLV-nQ-255" id="gTr-MJ-WXq"/>
+                        <outlet property="connectionButton" destination="GKw-4V-d13" id="lmy-gD-wUF"/>
                         <outlet property="email" destination="TRf-fK-M02" id="uXk-dq-Xq8"/>
                         <outlet property="hostName" destination="LKc-yx-RiI" id="9hq-jo-WA2"/>
                         <outlet property="password" destination="d74-ZU-STa" id="6ak-Zf-fwF"/>
@@ -330,6 +355,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

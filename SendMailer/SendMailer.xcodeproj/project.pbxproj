@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2B1C032AA36E98B75FB4C5DD /* Pods_SendMailer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F3BD6B73AA9E83BBF30138 /* Pods_SendMailer.framework */; };
+		440E4D9227FA083D00237DD8 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4D9127FA083D00237DD8 /* MessageViewModel.swift */; };
 		4460991F27CE9FD1001E1DF4 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460991E27CE9FD1001E1DF4 /* UIUtilities.swift */; };
 		4460992227CEA4CB001E1DF4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460992127CEA4CB001E1DF4 /* SettingsController.swift */; };
 		4460992427CEAB68001E1DF4 /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460992327CEAB68001E1DF4 /* ICacheManager.swift */; };
 		4460992627CEAC01001E1DF4 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460992527CEAC01001E1DF4 /* CacheManager.swift */; };
-		4493357727CE8DCB0086EE5B /* ISMTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4493357627CE8DCB0086EE5B /* ISMTPManager.swift */; };
-		4493357927CE8E2B0086EE5B /* SMTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4493357827CE8E2B0086EE5B /* SMTPManager.swift */; };
+		4493357727CE8DCB0086EE5B /* IMailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4493357627CE8DCB0086EE5B /* IMailManager.swift */; };
+		4493357927CE8E2B0086EE5B /* MailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4493357827CE8E2B0086EE5B /* MailManager.swift */; };
 		4493357B27CE8F540086EE5B /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4493357A27CE8F540086EE5B /* Injection.swift */; };
 		4493357E27CE8FAB0086EE5B /* ILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4493357D27CE8FAB0086EE5B /* ILogger.swift */; };
 		4493358027CE8FD30086EE5B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4493357F27CE8FD30086EE5B /* Logger.swift */; };
+		44CF6E5727F9DEFB00E1640D /* MailUtilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF6E5627F9DEFB00E1640D /* MailUtilites.swift */; };
+		44CF6E5A27F9FB7600E1640D /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF6E5927F9FB7600E1640D /* MessageViewModel.swift */; };
+		44CF6E5C27F9FC9200E1640D /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF6E5B27F9FC9200E1640D /* CustomError.swift */; };
 		44E3E7E827CE583F0092E6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */; };
 		44E3E7EC27CE583F0092E6C9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3E7EB27CE583F0092E6C9 /* MainController.swift */; };
 		44E3E7EF27CE583F0092E6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E3E7ED27CE583F0092E6C9 /* Main.storyboard */; };
@@ -50,16 +54,20 @@
 /* Begin PBXFileReference section */
 		25E7E212D18957FEABF4627B /* Pods-SendMailer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.release.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.release.xcconfig"; sourceTree = "<group>"; };
 		298D4949CA1137E42F24C190 /* Pods-SendMailer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.debug.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.debug.xcconfig"; sourceTree = "<group>"; };
+		440E4D9127FA083D00237DD8 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		4460991E27CE9FD1001E1DF4 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		4460992127CEA4CB001E1DF4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		4460992327CEAB68001E1DF4 /* ICacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICacheManager.swift; sourceTree = "<group>"; };
 		4460992527CEAC01001E1DF4 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
-		4493357627CE8DCB0086EE5B /* ISMTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMTPManager.swift; sourceTree = "<group>"; };
-		4493357827CE8E2B0086EE5B /* SMTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTPManager.swift; sourceTree = "<group>"; };
+		4493357627CE8DCB0086EE5B /* IMailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMailManager.swift; sourceTree = "<group>"; };
+		4493357827CE8E2B0086EE5B /* MailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailManager.swift; sourceTree = "<group>"; };
 		4493357A27CE8F540086EE5B /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		4493357D27CE8FAB0086EE5B /* ILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILogger.swift; sourceTree = "<group>"; };
 		4493357F27CE8FD30086EE5B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		44A4B56927F607AC0043BB83 /* MailCore-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailCore-header.h"; sourceTree = "<group>"; };
+		44CF6E5627F9DEFB00E1640D /* MailUtilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailUtilites.swift; sourceTree = "<group>"; };
+		44CF6E5927F9FB7600E1640D /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		44CF6E5B27F9FC9200E1640D /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		44E3E7E427CE583E0092E6C9 /* SendMailer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMailer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E3E7E727CE583F0092E6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44E3E7EB27CE583F0092E6C9 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -139,6 +147,22 @@
 			path = "Objc Headers";
 			sourceTree = "<group>";
 		};
+		44CF6E5827F9FB6800E1640D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44CF6E5927F9FB7600E1640D /* MessageViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44CF6E5D27FA035E00E1640D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				440E4D9127FA083D00237DD8 /* MessageViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		44E3E7DB27CE583E0092E6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +188,8 @@
 		44E3E7E627CE583E0092E6C9 /* SendMailer */ = {
 			isa = PBXGroup;
 			children = (
+				44CF6E5D27FA035E00E1640D /* Views */,
+				44CF6E5827F9FB6800E1640D /* Models */,
 				44A4B56827F607940043BB83 /* Objc Headers */,
 				4460992027CEA4B0001E1DF4 /* Controllers */,
 				44E3E82027CE8CE30092E6C9 /* Utils */,
@@ -209,6 +235,8 @@
 				4493357C27CE8F990086EE5B /* Logger */,
 				44E3E82127CE8CE90092E6C9 /* Managers */,
 				4460991E27CE9FD1001E1DF4 /* UIUtilities.swift */,
+				44CF6E5627F9DEFB00E1640D /* MailUtilites.swift */,
+				44CF6E5B27F9FC9200E1640D /* CustomError.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -235,8 +263,8 @@
 		44E3E82327CE8CF70092E6C9 /* SMTPManager */ = {
 			isa = PBXGroup;
 			children = (
-				4493357627CE8DCB0086EE5B /* ISMTPManager.swift */,
-				4493357827CE8E2B0086EE5B /* SMTPManager.swift */,
+				4493357627CE8DCB0086EE5B /* IMailManager.swift */,
+				4493357827CE8E2B0086EE5B /* MailManager.swift */,
 			);
 			path = SMTPManager;
 			sourceTree = "<group>";
@@ -431,18 +459,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				4460992627CEAC01001E1DF4 /* CacheManager.swift in Sources */,
+				44CF6E5C27F9FC9200E1640D /* CustomError.swift in Sources */,
 				4493357B27CE8F540086EE5B /* Injection.swift in Sources */,
 				4493357E27CE8FAB0086EE5B /* ILogger.swift in Sources */,
-				4493357727CE8DCB0086EE5B /* ISMTPManager.swift in Sources */,
+				4493357727CE8DCB0086EE5B /* IMailManager.swift in Sources */,
+				440E4D9227FA083D00237DD8 /* MessageViewModel.swift in Sources */,
 				44E3E81C27CE79810092E6C9 /* BorderedView.swift in Sources */,
 				4460991F27CE9FD1001E1DF4 /* UIUtilities.swift in Sources */,
 				4460992227CEA4CB001E1DF4 /* SettingsController.swift in Sources */,
+				44CF6E5A27F9FB7600E1640D /* MessageViewModel.swift in Sources */,
+				44CF6E5727F9DEFB00E1640D /* MailUtilites.swift in Sources */,
 				4493358027CE8FD30086EE5B /* Logger.swift in Sources */,
 				44E3E7EC27CE583F0092E6C9 /* MainController.swift in Sources */,
 				44E3E7E827CE583F0092E6C9 /* AppDelegate.swift in Sources */,
 				44E3E81E27CE7F240092E6C9 /* SceneDelegate.swift in Sources */,
 				4460992427CEAB68001E1DF4 /* ICacheManager.swift in Sources */,
-				4493357927CE8E2B0086EE5B /* SMTPManager.swift in Sources */,
+				4493357927CE8E2B0086EE5B /* MailManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

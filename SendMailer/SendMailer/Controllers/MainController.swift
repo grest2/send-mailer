@@ -15,7 +15,7 @@ class MainController: UIViewController {
     @IBOutlet weak var addres: UITextField!
     @IBOutlet weak var sendButton: BorderedView!
     
-    private let manager: ISMTPManager = Resolver.resolve()
+    private let manager: IMailManager = Resolver.resolve()
     private let cache: ICacheManager = Resolver.resolve()
     
     override func viewDidLoad() {
@@ -23,6 +23,13 @@ class MainController: UIViewController {
         
         UIUtilities.applyTap(action: #selector(sendMail), initer: self, target: self.sendButton)
         UIUtilities.applyTap(action: #selector(showSettins), initer: self, target: self.settingsButton)
+        
+        self.manager.fetchMessages()
+            .then {
+                message in
+                
+                print(message)
+            }
     }
     
     @objc private func sendMail() {

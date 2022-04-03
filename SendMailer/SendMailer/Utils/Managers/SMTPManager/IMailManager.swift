@@ -9,6 +9,10 @@ import Foundation
 import Promises
 import SwiftSMTP
 
-protocol ISMTPManager {
+protocol IMailManager {
     func sendMessage(mail: Mail) -> Promise<Void>
+    
+    //MARK: via IMAP
+    func fetchMessages() -> Promise<MessageViewModel>
+    func checkConnection() -> Promise<Void>
 }
