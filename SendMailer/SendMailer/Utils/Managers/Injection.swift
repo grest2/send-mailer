@@ -15,7 +15,7 @@ extension Resolver: ResolverRegistering {
         }
         
         register {
-            SMTPManager() as ISMTPManager
+            MailManager() as IMailManager
         }
         
         register {

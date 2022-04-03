@@ -18,7 +18,10 @@ class CacheManager: ICacheManager {
     }
     
     func getValue(forKey: CacheKeys) -> String {
-        self.defaults.value(forKey: forKey.rawValue) as! String
+        if let value = self.defaults.value(forKey: forKey.rawValue) as? String {
+            return value
+        }
+        return "empty99"
     }
     
     func setSecureValue(forKey: CacheKeys, value: String) {
@@ -26,7 +29,15 @@ class CacheManager: ICacheManager {
         KeychainWrapper.standard.set(value, forKey: forKey.rawValue)
     }
     
-    func getSecureValue(forKey: CacheKeys, value: String) -> String {
+    func getSecureValue(forKey: CacheKeys) -> String {
         return KeychainWrapper.standard.string(forKey: forKey.rawValue) ?? ""
+    }
+    
+    func clear() {
+        KeychainWrapper.standard.removeAllKeys()
+        self.defaults.removeObject(forKey: CacheKeys.password.rawValue)
+        self.defaults.removeObject(forKey: CacheKeys.host.rawValue)
+        self.defaults.removeObject(forKey: CacheKeys.email.rawValue)
+        self.defaults.removeObject(forKey: CacheKeys.port.rawValue)
     }
 }

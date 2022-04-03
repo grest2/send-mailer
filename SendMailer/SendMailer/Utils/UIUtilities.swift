@@ -19,5 +19,11 @@ class UIUtilities {
             _target.addGestureRecognizer(tap)
         }
     }
+    
+    public static func alertPresent(title: String, message: String, action: UIAlertAction, controller: UIViewController) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(action)
+        controller.present(alert, animated: true)
+    }
 }
 

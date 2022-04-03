@@ -52,5 +52,277 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A4ADD97-E3ED-4040-BA7E-02D37A7B7E66"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "session"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8766112E-F237-4A89-8A57-64A9D917C27B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "sendMessage(mail:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8766112E-F237-4A89-8A57-64A9D917C27B - 7741c76eabe433aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 ((()) -&gt; (), (Swift.Error) -&gt; ()) -&gt; () in SendMailer.MailManager.sendMessage(mail: SwiftSMTP.Mail) -&gt; Promises.Promise&lt;()&gt;"
+                  moduleName = "SendMailer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "8766112E-F237-4A89-8A57-64A9D917C27B - 7741c76eabe433aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 ((()) -&gt; (), (Swift.Error) -&gt; ()) -&gt; () in SendMailer.MailManager.sendMessage(mail: SwiftSMTP.Mail) -&gt; Promises.Promise&lt;()&gt;"
+                  moduleName = "SendMailer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "202">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86CD926C-008F-4C3E-AB18-67297E505469"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "checkConnection()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "86CD926C-008F-4C3E-AB18-67297E505469 - a73a38b820684ae3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 ((()) -&gt; (), (Swift.Error) -&gt; ()) -&gt; () in SendMailer.MailManager.checkConnection() -&gt; Promises.Promise&lt;()&gt;"
+                  moduleName = "SendMailer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "201">
+               </Location>
+               <Location
+                  uuid = "86CD926C-008F-4C3E-AB18-67297E505469 - a73a38b820684ae3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 ((()) -&gt; (), (Swift.Error) -&gt; ()) -&gt; () in SendMailer.MailManager.checkConnection() -&gt; Promises.Promise&lt;()&gt;"
+                  moduleName = "SendMailer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "235">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC8E01F6-51F4-4E8D-B0F0-F63C8F0918FC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "checkConnection()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A7B3C33-55E9-4126-9D5F-9794684642E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Controllers/SettingsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "testConnection(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5A62DEA-BCDF-4867-8950-54CAC5A84120"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "fetchMessages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A5A62DEA-BCDF-4867-8950-54CAC5A84120 - 72a270fa6c6509c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Swift.Array&lt;Any&gt;&gt;, Swift.Optional&lt;__C.MCOIndexSet&gt;) -&gt; () in closure #1 ((()) -&gt; (), (Swift.Error) -&gt; ()) -&gt; () in SendMailer.MailManager.fetchMessages() -&gt; Promises.Promise&lt;()&gt;"
+                  moduleName = "SendMailer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "A5A62DEA-BCDF-4867-8950-54CAC5A84120 - 72a270fa6c6509c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Swift.Array&lt;Any&gt;&gt;, Swift.Optional&lt;__C.MCOIndexSet&gt;) -&gt; () in closure #1 ((()) -&gt; (), (Swift.Error) -&gt; ()) -&gt; () in SendMailer.MailManager.fetchMessages() -&gt; Promises.Promise&lt;()&gt;"
+                  moduleName = "SendMailer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "330">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F58F3BE3-A028-444E-8835-61DEC570C8C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "fetchMessages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F58F3BE3-A028-444E-8835-61DEC570C8C3 - 37e6d1655d4d1d56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Swift.Array&lt;Any&gt;&gt;, Swift.Optional&lt;__C.MCOIndexSet&gt;) -&gt; () in closure #1 ((SendMailer.MessageView) -&gt; (), (Swift.Error) -&gt; ()) -&gt; () in SendMailer.MailManager.fetchMessages() -&gt; Promises.Promise&lt;SendMailer.MessageView&gt;"
+                  moduleName = "SendMailer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1127">
+               </Location>
+               <Location
+                  uuid = "F58F3BE3-A028-444E-8835-61DEC570C8C3 - 37e6d1655d4d1d56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Swift.Array&lt;Any&gt;&gt;, Swift.Optional&lt;__C.MCOIndexSet&gt;) -&gt; () in closure #1 ((SendMailer.MessageView) -&gt; (), (Swift.Error) -&gt; ()) -&gt; () in SendMailer.MailManager.fetchMessages() -&gt; Promises.Promise&lt;SendMailer.MessageView&gt;"
+                  moduleName = "SendMailer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdeveloper/Documents/Ilya/send-mailer/SendMailer/SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1197">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E46BD739-314F-4EE5-B0B7-761357F8D5CB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Controllers/MainController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18443584-754E-4035-9F5E-E920CC06D18E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SendMailer/Utils/Managers/SMTPManager/MailManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "fetchMessages()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

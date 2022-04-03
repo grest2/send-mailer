@@ -20,5 +20,7 @@ protocol ICacheManager {
     func getValue(forKey: CacheKeys) -> String
     
     func setSecureValue(forKey: CacheKeys, value: String)
-    func getSecureValue(forKey: CacheKeys, value: String) -> String
+    func getSecureValue(forKey: CacheKeys) -> String
+    
+    func clear()
 }
