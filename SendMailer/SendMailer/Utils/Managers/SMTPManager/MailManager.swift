@@ -53,7 +53,7 @@ class MailManager: IMailManager {
         })
     }
     
-    func fetchMessages() -> Promise<MessageView> {
+    func fetchMessages() -> Promise<MessageViewModel> {
         let uids = MCOIndexSet(range: MCORange(location: 1, length: UInt64.max))
         
         return Promise(on: .global(qos: .background), {

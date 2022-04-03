@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B1C032AA36E98B75FB4C5DD /* Pods_SendMailer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F3BD6B73AA9E83BBF30138 /* Pods_SendMailer.framework */; };
+		440E4D9227FA083D00237DD8 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4D9127FA083D00237DD8 /* MessageViewModel.swift */; };
 		4460991F27CE9FD1001E1DF4 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460991E27CE9FD1001E1DF4 /* UIUtilities.swift */; };
 		4460992227CEA4CB001E1DF4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460992127CEA4CB001E1DF4 /* SettingsController.swift */; };
 		4460992427CEAB68001E1DF4 /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460992327CEAB68001E1DF4 /* ICacheManager.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		25E7E212D18957FEABF4627B /* Pods-SendMailer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.release.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.release.xcconfig"; sourceTree = "<group>"; };
 		298D4949CA1137E42F24C190 /* Pods-SendMailer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.debug.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.debug.xcconfig"; sourceTree = "<group>"; };
+		440E4D9127FA083D00237DD8 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		4460991E27CE9FD1001E1DF4 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		4460992127CEA4CB001E1DF4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		4460992327CEAB68001E1DF4 /* ICacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICacheManager.swift; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		44CF6E5D27FA035E00E1640D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				440E4D9127FA083D00237DD8 /* MessageViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		44E3E7DB27CE583E0092E6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 		44E3E7E627CE583E0092E6C9 /* SendMailer */ = {
 			isa = PBXGroup;
 			children = (
+				44CF6E5D27FA035E00E1640D /* Views */,
 				44CF6E5827F9FB6800E1640D /* Models */,
 				44A4B56827F607940043BB83 /* Objc Headers */,
 				4460992027CEA4B0001E1DF4 /* Controllers */,
@@ -452,6 +463,7 @@
 				4493357B27CE8F540086EE5B /* Injection.swift in Sources */,
 				4493357E27CE8FAB0086EE5B /* ILogger.swift in Sources */,
 				4493357727CE8DCB0086EE5B /* IMailManager.swift in Sources */,
+				440E4D9227FA083D00237DD8 /* MessageViewModel.swift in Sources */,
 				44E3E81C27CE79810092E6C9 /* BorderedView.swift in Sources */,
 				4460991F27CE9FD1001E1DF4 /* UIUtilities.swift in Sources */,
 				4460992227CEA4CB001E1DF4 /* SettingsController.swift in Sources */,

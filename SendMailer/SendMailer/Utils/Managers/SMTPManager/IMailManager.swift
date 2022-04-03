@@ -13,6 +13,6 @@ protocol IMailManager {
     func sendMessage(mail: Mail) -> Promise<Void>
     
     //MARK: via IMAP
-    func fetchMessages() -> Promise<MessageView>
+    func fetchMessages() -> Promise<MessageViewModel>
     func checkConnection() -> Promise<Void>
 }

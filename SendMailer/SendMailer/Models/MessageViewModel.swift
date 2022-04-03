@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MessageView {
+class MessageViewModel {
     var body: String
     var attachments: [MCOAttachment] = []
     
