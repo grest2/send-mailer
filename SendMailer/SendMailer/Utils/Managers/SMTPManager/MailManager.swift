@@ -82,7 +82,7 @@ class MailManager: IMailManager {
                                     let attachments = parser.attachments() as? [MCOAttachment]
                                     let messageBody = parser.plainTextRendering()
                                     
-                                    fulfill(MessageView(body: messageBody ?? "", attachments: attachments ?? []))
+                                    fulfill(MessageViewModel(body: messageBody ?? "", attachments: attachments ?? []))
                                 }
                             })
                         }
