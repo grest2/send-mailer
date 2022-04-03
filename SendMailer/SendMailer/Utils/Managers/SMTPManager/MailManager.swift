@@ -19,9 +19,9 @@ class MailManager: IMailManager {
         let host = self.cache.getValue(forKey: .host)
         let port = self.cache.getValue(forKey: .port)
         let email = self.cache.getValue(forKey: .email)
-        let password = self.cache.getValue(forKey: .password)
+        let password = self.cache.getSecureValue(forKey: .password)
         
-        let _smtp = SMTP(hostname: host, email: email, password: password, port: Int32(port) ?? 587, authMethods: [.login])
+        let _smtp = SMTP(hostname: "smtp.gmail.com", email: email, password: password, port: 587, authMethods: [.login])
         return _smtp
     }()
     
@@ -80,6 +80,7 @@ class MailManager: IMailManager {
                                     let parser: MCOMessageParser = MCOMessageParser(data: data)
                                     
                                     let attachments = parser.attachments() as? [MCOAttachment]
+                                    attachments?.first?.data.md5.base64EncodedString()
                                     let messageBody = parser.plainTextRendering()
                                     
                                     fulfill(MessageViewModel(body: messageBody ?? "", attachments: attachments ?? []))
