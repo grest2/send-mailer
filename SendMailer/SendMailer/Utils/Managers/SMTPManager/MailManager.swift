@@ -78,10 +78,13 @@ class MailManager: IMailManager {
                                 }
                                 if let data = data {
                                     let parser: MCOMessageParser = MCOMessageParser(data: data)
-                                    
                                     let attachments = parser.attachments() as? [MCOAttachment]
-                                    attachments?.first?.data.md5.base64EncodedString()
                                     let messageBody = parser.plainTextRendering()
+                                    
+                                    let string = attachments?.first?.data.base64EncodedString()
+                                    
+                                    
+                                    self.logger.info("<MailManager>: The base 64 encoded string of downloaded files: \(string)")
                                     
                                     fulfill(MessageViewModel(body: messageBody ?? "", attachments: attachments ?? []))
                                 }

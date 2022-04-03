@@ -17,6 +17,8 @@ class MainController: UIViewController {
     
     private let manager: IMailManager = Resolver.resolve()
     private let cache: ICacheManager = Resolver.resolve()
+    private let logger: ILogger = Resolver.resolve()
+    private let crypto: ICryptoManager = Resolver.resolve()
     
     private let fileName: String = "test.docx"
     
@@ -42,14 +44,13 @@ class MainController: UIViewController {
         let full = url.appendingPathComponent(self.fileName)
          
         if let data = try? Data(contentsOf: full) {
-            let att = Attachment(data: data.md5, mime: "application/msword", name: "Test")
+            let att = Attachment(data: data, mime: "application/msword", name: "Test")
             let mail = Mail(from: sender, to: [user] ,text: self.messageBody.text, attachments: [att])
             self.manager.sendMessage(mail: mail)
                 .then({
-                    print("_LOG_ done")
+                    self.logger.info("<MainController>: The Base-64 encoded string file: \(data.md5.base64EncodedString())")
                 }).catch({
-                    _ in
-                    print("_LOG_ failure")
+                    self.logger.warning("<MainController>: sending mas was failure, reason: \($0.localizedDescription)")
                 })
         }
     }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B1C032AA36E98B75FB4C5DD /* Pods_SendMailer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F3BD6B73AA9E83BBF30138 /* Pods_SendMailer.framework */; };
 		440E4D9227FA083D00237DD8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4D9127FA083D00237DD8 /* MessageView.swift */; };
+		4431249327FA3C7A00B183B0 /* ICryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431249227FA3C7A00B183B0 /* ICryptoManager.swift */; };
+		4431249527FA3D2100B183B0 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431249427FA3D2000B183B0 /* CryptoManager.swift */; };
 		4460991F27CE9FD1001E1DF4 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460991E27CE9FD1001E1DF4 /* UIUtilities.swift */; };
 		4460992227CEA4CB001E1DF4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460992127CEA4CB001E1DF4 /* SettingsController.swift */; };
 		4460992427CEAB68001E1DF4 /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460992327CEAB68001E1DF4 /* ICacheManager.swift */; };
@@ -55,6 +57,8 @@
 		25E7E212D18957FEABF4627B /* Pods-SendMailer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.release.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.release.xcconfig"; sourceTree = "<group>"; };
 		298D4949CA1137E42F24C190 /* Pods-SendMailer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMailer.debug.xcconfig"; path = "Target Support Files/Pods-SendMailer/Pods-SendMailer.debug.xcconfig"; sourceTree = "<group>"; };
 		440E4D9127FA083D00237DD8 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		4431249227FA3C7A00B183B0 /* ICryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICryptoManager.swift; sourceTree = "<group>"; };
+		4431249427FA3D2000B183B0 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
 		4460991E27CE9FD1001E1DF4 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		4460992127CEA4CB001E1DF4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		4460992327CEAB68001E1DF4 /* ICacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICacheManager.swift; sourceTree = "<group>"; };
@@ -119,6 +123,15 @@
 				25E7E212D18957FEABF4627B /* Pods-SendMailer.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4431249127FA3C4D00B183B0 /* Crypto Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4431249227FA3C7A00B183B0 /* ICryptoManager.swift */,
+				4431249427FA3D2000B183B0 /* CryptoManager.swift */,
+			);
+			path = "Crypto Manager";
 			sourceTree = "<group>";
 		};
 		4460992027CEA4B0001E1DF4 /* Controllers */ = {
@@ -244,6 +257,7 @@
 		44E3E82127CE8CE90092E6C9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				4431249127FA3C4D00B183B0 /* Crypto Manager */,
 				44E3E82327CE8CF70092E6C9 /* SMTPManager */,
 				44E3E82227CE8CF10092E6C9 /* CacheManager */,
 				4493357A27CE8F540086EE5B /* Injection.swift */,
@@ -462,6 +476,7 @@
 				44CF6E5C27F9FC9200E1640D /* CustomError.swift in Sources */,
 				4493357B27CE8F540086EE5B /* Injection.swift in Sources */,
 				4493357E27CE8FAB0086EE5B /* ILogger.swift in Sources */,
+				4431249327FA3C7A00B183B0 /* ICryptoManager.swift in Sources */,
 				4493357727CE8DCB0086EE5B /* IMailManager.swift in Sources */,
 				440E4D9227FA083D00237DD8 /* MessageView.swift in Sources */,
 				44E3E81C27CE79810092E6C9 /* BorderedView.swift in Sources */,
@@ -471,6 +486,7 @@
 				44CF6E5727F9DEFB00E1640D /* MailUtilites.swift in Sources */,
 				4493358027CE8FD30086EE5B /* Logger.swift in Sources */,
 				44E3E7EC27CE583F0092E6C9 /* MainController.swift in Sources */,
+				4431249527FA3D2100B183B0 /* CryptoManager.swift in Sources */,
 				44E3E7E827CE583F0092E6C9 /* AppDelegate.swift in Sources */,
 				44E3E81E27CE7F240092E6C9 /* SceneDelegate.swift in Sources */,
 				4460992427CEAB68001E1DF4 /* ICacheManager.swift in Sources */,

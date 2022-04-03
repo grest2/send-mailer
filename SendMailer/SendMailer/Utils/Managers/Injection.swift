@@ -21,5 +21,9 @@ extension Resolver: ResolverRegistering {
         register {
             CacheManager() as ICacheManager
         }
+        
+        register {
+            CryptoManager() as ICryptoManager
+        }
     }
 }

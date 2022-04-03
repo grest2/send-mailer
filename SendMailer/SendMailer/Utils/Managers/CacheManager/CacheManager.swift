@@ -21,7 +21,7 @@ class CacheManager: ICacheManager {
         if let value = self.defaults.value(forKey: forKey.rawValue) as? String {
             return value
         }
-        return "empty99"
+        return "empty"
     }
     
     func setSecureValue(forKey: CacheKeys, value: String) {
