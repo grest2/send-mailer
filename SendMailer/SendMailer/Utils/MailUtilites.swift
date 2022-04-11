@@ -7,6 +7,12 @@
 
 import Foundation
 
+enum MimeType: String {
+    case word = "application/msword"
+    case jpg = "image/jpeg"
+    case png = "image/png"
+}
+
 enum MailFolderType: String {
     case inbox = "INBOX"
     case outbox = "OUTBOX"
