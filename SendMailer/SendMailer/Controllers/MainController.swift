@@ -63,7 +63,8 @@ class MainController: UIViewController {
                 if let file = message.attachments.first?.data {
                     let box = try! ChaChaPoly.SealedBox(combined: file)
                     let decrypt = try! ChaChaPoly.open(box, using: self.symmetricKey)
-                    self.logger.info("_LOG_: Decrypted file size: \(decrypt.count)")
+                    
+                    print("_LOG_: Decrypted file size: \(decrypt.count)")
                 }
                 print(message)
             }
