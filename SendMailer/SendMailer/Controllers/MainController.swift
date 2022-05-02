@@ -41,13 +41,15 @@ class MainController: UIViewController {
         let full = url.appendingPathComponent(self.fileName)
         
         if let data = try? Data(contentsOf: full) {
+            let privateKey = Curve25519.Signing.PrivateKey()
+            let publicKeyData = privateKey.publicKey.rawRepresentation
             
-            let sealedData = try! ChaChaPoly.seal(data, using: symmetricKey).combined
-            let box = try! ChaChaPoly.SealedBox(combined: sealedData)
-            let decr = try! ChaChaPoly.open(box, using: self.symmetricKey)
+            let signature = try! privateKey.signature(for: data)
             
-            let att = Attachment(data: sealedData, mime: MimeType.png.rawValue, name: "Test")
-            let mail = Mail(from: sender, to: [user] ,text: String(describing: self.symmetricKey), attachments: [att])
+            
+            let att = Attachment(data: publicKeyData, mime: MimeType.key.rawValue, name: "Public key")
+            let signed = Attachment(data: signature, mime: MimeType.bin.rawValue, name: "Signatured data")
+            let mail = Mail(from: sender, to: [user] ,text: "message", attachments: [att, signed])
             self.manager.sendMessage(mail: mail)
                 .then({
                     self.logger.info("_LOG_: file was send with size: \(data.count)")
@@ -60,13 +62,17 @@ class MainController: UIViewController {
         self.manager.fetchMessages()
             .then {
                 message in
-                if let file = message.attachments.first?.data {
-                    let box = try! ChaChaPoly.SealedBox(combined: file)
-                    let decrypt = try! ChaChaPoly.open(box, using: self.symmetricKey)
-                    
-                    print("_LOG_: Decrypted file size: \(decrypt.count)")
+                
+                let key = message.attachments.first(where: { $0.mimeType == MimeType.key.rawValue })!.data!
+                let pubKey = try! Curve25519.Signing.PublicKey(rawRepresentation: key)
+                let signature = message.attachments.first(where: { $0.mimeType == MimeType.bin.rawValue })!.data!
+                
+                let url = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask).first!
+                let full = url.appendingPathComponent(self.fileName)
+                
+                if let data = try? Data(contentsOf: full), pubKey.isValidSignature(signature, for: data) {
+                    print("_LOG_ valid")
                 }
-                print(message)
             }
     }
     

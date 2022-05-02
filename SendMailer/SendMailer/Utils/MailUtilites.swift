@@ -11,6 +11,8 @@ enum MimeType: String {
     case word = "application/msword"
     case jpg = "image/jpeg"
     case png = "image/png"
+    case key = "application/x-pem-file"
+    case bin = "application/octet-stream"
 }
 
 enum MailFolderType: String {
