@@ -1,5 +1,5 @@
 # send-mailer
-SMTP client app for iOS
+App for sending and fetching mails to mail address, with attaching encoded files
 
 This app containts 2 screens: 
 1) Main screen has actions for writting and sending messages to mail client
